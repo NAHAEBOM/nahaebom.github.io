@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="자동매매, 데이터 수집, 리포트 자동화 등 FIRE Research Lab의 시스템 구조를 정리한 페이지">
   <title>Systems | FIRE Research Lab</title>
+  <meta name="description" content="자동매매 엔진, 데이터 수집, 리포트 자동화, 클라우드 운영 구조를 정리한 시스템 허브 페이지입니다.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
   <header class="site-header">
     <div class="container">
       <h1 class="site-title">FIRE Research Lab</h1>
-      <p class="site-subtitle">Systems Overview</p>
+      <p class="site-subtitle">Systems & Infrastructure</p>
 
       <nav class="site-nav">
         <a href="index.html">Home</a>
@@ -25,22 +25,379 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="card">
-      <h2>Systems</h2>
-      <ul>
-        <li>자동매매 엔진</li>
-        <li>데이터 수집 자동화</li>
-        <li>리포트 생성 및 텔레그램 전송</li>
-        <li>클라우드 기반 운영 구조</li>
-      </ul>
+  <main>
+    <!-- Hero -->
+    <section class="page-hero systems-hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <p class="section-eyebrow">Operational Architecture</p>
+            <h2 class="page-title">실제 운영 가능한 자동화 시스템 구조</h2>
+            <p class="page-description">
+              이 페이지는 단순한 소개가 아니라, 실제로 운영 중이거나 구축 중인
+              자동매매 엔진, 데이터 수집 파이프라인, 리포트 자동화, 클라우드 운영 구조를
+              정리한 시스템 허브입니다.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#live-systems" class="btn btn-primary">운영 시스템 보기</a>
+              <a href="#architecture" class="btn btn-secondary">구조 확인</a>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <h3>Core Focus</h3>
+            <ul class="hero-list">
+              <li>자동매매 엔진 설계 및 운영</li>
+              <li>시장 데이터 수집 및 저장 자동화</li>
+              <li>리포트 생성 및 텔레그램 전송</li>
+              <li>클라우드 기반 지속 운영 구조</li>
+              <li>향후 API / DB / 백엔드 확장 대응</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Purpose</h2>
-      <p>이 페이지는 실제 운영 중인 시스템과 구축 예정 시스템을 정리하는 공간입니다.</p>
+    <!-- Live Systems -->
+    <section id="live-systems" class="content-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">Live Systems</p>
+          <h2>운영 시스템</h2>
+          <p>
+            현재 사이트의 핵심은 연구 기록이 아니라, 실제 운영 가능한 구조를
+            차곡차곡 쌓아가는 것입니다.
+          </p>
+        </div>
+
+        <div class="card-grid three-col">
+          <article class="info-card">
+            <span class="card-tag">Trading Engine</span>
+            <h3>자동매매 엔진</h3>
+            <p>
+              분할매수 기반 전략, 상태 저장, 예외 처리, 로그 기록, 계좌별 조건 제어를
+              포함한 실전형 자동매매 엔진을 설계하고 운영합니다.
+            </p>
+            <ul class="feature-list">
+              <li>전략 로직 분리</li>
+              <li>상태 파일 기반 복구 가능 구조</li>
+              <li>예외 처리 및 로그 관리</li>
+              <li>다계좌 확장 가능성 고려</li>
+            </ul>
+          </article>
+
+          <article class="info-card">
+            <span class="card-tag">Data Pipeline</span>
+            <h3>데이터 수집 시스템</h3>
+            <p>
+              시장 데이터, 거시지표, 환율, 변동성 데이터 등을 주기적으로 수집하여
+              저장하고, 분석과 보고서 생성에 연결합니다.
+            </p>
+            <ul class="feature-list">
+              <li>KRX / FRED / 환율 데이터 수집</li>
+              <li>정기 업데이트 자동화</li>
+              <li>파일 기반 저장 구조</li>
+              <li>향후 DB 연결 가능</li>
+            </ul>
+          </article>
+
+          <article class="info-card">
+            <span class="card-tag">Reporting</span>
+            <h3>리포트 자동 생성</h3>
+            <p>
+              수집된 데이터를 기반으로 그래프, 요약, 시황 문장, 텔레그램 리포트를
+              자동 생성하는 리포트 레이어를 구성합니다.
+            </p>
+            <ul class="feature-list">
+              <li>일일 리포트 자동 생성</li>
+              <li>차트 이미지 출력</li>
+              <li>텔레그램 메시지 연동</li>
+              <li>향후 이메일 / 웹 대시보드 확장</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture -->
+    <section id="architecture" class="content-section alt-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">Architecture</p>
+          <h2>운영 구조</h2>
+          <p>
+            GitHub Pages는 프론트엔드 허브 역할을 담당하고, 실제 계산·수집·전송은
+            외부 실행 환경에서 돌아가는 구조를 전제로 설계합니다.
+          </p>
+        </div>
+
+        <div class="architecture-flow">
+          <div class="flow-box">
+            <h3>1. Data Sources</h3>
+            <p>KRX / 환율 / 거시지표 / 증권 API / 수동 입력 데이터</p>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-box">
+            <h3>2. Collection Layer</h3>
+            <p>Python 스크립트 / 배치 작업 / 스케줄러 / API 호출</p>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-box">
+            <h3>3. Storage Layer</h3>
+            <p>JSON / CSV / Excel / Cloud Storage / 향후 DB</p>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-box">
+            <h3>4. Analysis & Strategy</h3>
+            <p>자동매매 로직 / 지표 계산 / 백테스트 / 리포트 생성</p>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-box">
+            <h3>5. Delivery Layer</h3>
+            <p>Telegram / Website / PDF / Email / Dashboard</p>
+          </div>
+        </div>
+
+        <div class="system-note">
+          <strong>운영 기준 핵심:</strong>
+          GitHub Pages는 사용자에게 구조와 결과를 보여주는 프론트엔드이고,
+          실제 엔진은 클라우드 또는 서버 환경에서 실행되는 분리형 구조가 가장 안정적입니다.
+        </div>
+      </div>
+    </section>
+
+    <!-- System Modules -->
+    <section class="content-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">System Modules</p>
+          <h2>모듈별 설계</h2>
+          <p>
+            나중에 백엔드와 DB를 붙여도 프론트 구조를 다시 뜯지 않도록,
+            시스템을 모듈 단위로 나누어 설계합니다.
+          </p>
+        </div>
+
+        <div class="module-grid">
+          <article class="module-card">
+            <h3>Strategy Engine</h3>
+            <p class="module-summary">
+              매수·매도 조건, 분할 로직, 리스크 제어, 상태 복구를 담당하는 핵심 엔진
+            </p>
+            <ul class="feature-list">
+              <li>전략별 독립 파일 구성</li>
+              <li>설정값 분리 (.json / .env / config)</li>
+              <li>실행 로그와 상태 파일 분리</li>
+              <li>실패 시 복구 가능한 구조 지향</li>
+            </ul>
+          </article>
+
+          <article class="module-card">
+            <h3>Data Collector</h3>
+            <p class="module-summary">
+              외부 데이터 소스에서 필요한 데이터를 정기 수집하는 모듈
+            </p>
+            <ul class="feature-list">
+              <li>API / 웹 수집 / 파일 업데이트</li>
+              <li>휴장일 / 예외 상황 처리</li>
+              <li>중복 데이터 덮어쓰기 정책</li>
+              <li>향후 DB 적재 가능 구조</li>
+            </ul>
+          </article>
+
+          <article class="module-card">
+            <h3>Storage Layer</h3>
+            <p class="module-summary">
+              초기에는 파일 기반, 이후에는 DB 확장 가능한 저장 레이어
+            </p>
+            <ul class="feature-list">
+              <li>JSON: 상태 저장</li>
+              <li>CSV/Excel: 시계열 저장</li>
+              <li>Cloud Storage: 장기 보관</li>
+              <li>향후 PostgreSQL / MySQL 확장</li>
+            </ul>
+          </article>
+
+          <article class="module-card">
+            <h3>Report Engine</h3>
+            <p class="module-summary">
+              데이터 요약, 차트 생성, 시황 문장화, 전달 포맷 생성을 담당
+            </p>
+            <ul class="feature-list">
+              <li>matplotlib 기반 차트 생성</li>
+              <li>일일 리포트 자동화</li>
+              <li>PDF / 이미지 / 텍스트 출력</li>
+              <li>향후 웹 대시보드 연결 가능</li>
+            </ul>
+          </article>
+
+          <article class="module-card">
+            <h3>Notification Layer</h3>
+            <p class="module-summary">
+              결과물을 텔레그램 또는 이메일 등 외부 채널로 보내는 모듈
+            </p>
+            <ul class="feature-list">
+              <li>텔레그램 메시지 전송</li>
+              <li>차트 이미지 전송</li>
+              <li>오류 알림 전송</li>
+              <li>향후 Slack / Email 연동 확장</li>
+            </ul>
+          </article>
+
+          <article class="module-card">
+            <h3>Site Frontend</h3>
+            <p class="module-summary">
+              연구, 시스템 구조, 결과물, 문서, 브랜드를 보여주는 프론트 레이어
+            </p>
+            <ul class="feature-list">
+              <li>GitHub Pages 기반 정적 배포</li>
+              <li>문서형 구조에 강함</li>
+              <li>향후 API fetch 연동 가능</li>
+              <li>콘텐츠 / 리포트 허브 역할</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Practical Stack -->
+    <section class="content-section alt-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">Practical Stack</p>
+          <h2>실전 운영 스택</h2>
+          <p>
+            지금은 GitHub Pages를 유지하되, 실제 운영은 외부 실행 환경과 분리해서
+            가져가는 것이 가장 현실적입니다.
+          </p>
+        </div>
+
+        <div class="stack-table-wrap">
+          <table class="stack-table">
+            <thead>
+              <tr>
+                <th>영역</th>
+                <th>현재 추천</th>
+                <th>향후 확장</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Frontend</td>
+                <td>HTML / CSS / JS / GitHub Pages</td>
+                <td>Next.js / Astro / Static + API Hybrid</td>
+              </tr>
+              <tr>
+                <td>Automation</td>
+                <td>Python Scripts</td>
+                <td>FastAPI / Flask / Worker 구조</td>
+              </tr>
+              <tr>
+                <td>Scheduling</td>
+                <td>cron / GitHub Actions / Cloud Scheduler</td>
+                <td>Airflow / Cloud Run Jobs</td>
+              </tr>
+              <tr>
+                <td>Storage</td>
+                <td>JSON / CSV / Excel / Cloud Storage</td>
+                <td>PostgreSQL / MySQL / BigQuery</td>
+              </tr>
+              <tr>
+                <td>Notification</td>
+                <td>Telegram</td>
+                <td>Email / Slack / Push</td>
+              </tr>
+              <tr>
+                <td>Reports</td>
+                <td>PNG / TXT / HTML / PDF</td>
+                <td>Dashboard / Client Portal</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Build Roadmap -->
+    <section class="content-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">Expansion Roadmap</p>
+          <h2>확장 로드맵</h2>
+          <p>
+            이 사이트는 정적 페이지에서 끝나는 것이 아니라,
+            연구 → 시스템 → 데이터 → 상품 → 브랜드로 확장되는 구조를 목표로 합니다.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-phase">Phase 1</div>
+            <div class="timeline-content">
+              <h3>정적 시스템 허브 완성</h3>
+              <p>
+                사이트 구조, 페이지별 목적, 시스템 소개, 연구 기록, 문의 동선을 정리합니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-phase">Phase 2</div>
+            <div class="timeline-content">
+              <h3>자동 리포트 연결</h3>
+              <p>
+                JSON / Markdown / HTML 조합으로 최신 리포트와 시스템 상태를 사이트에 반영합니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-phase">Phase 3</div>
+            <div class="timeline-content">
+              <h3>API / 백엔드 확장</h3>
+              <p>
+                FastAPI 또는 Flask를 별도 서버에 두고, GitHub Pages 프론트에서 API를 호출할 수 있게 만듭니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-phase">Phase 4</div>
+            <div class="timeline-content">
+              <h3>브랜드 / 상품화</h3>
+              <p>
+                전자책, 강의, 리서치 리포트, 자동화 시스템 문서화 및 서비스 페이지로 연결합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="content-section cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <h2>System-first. Research-backed. Brand-ready.</h2>
+          <p>
+            이 사이트는 단순한 포트폴리오가 아니라, 자동화 시스템과 금융 연구를
+            장기적으로 축적하고 연결하는 운영형 베이스캠프입니다.
+          </p>
+          <div class="hero-actions">
+            <a href="research.html" class="btn btn-primary">Research 보기</a>
+            <a href="contact.html" class="btn btn-secondary">Contact</a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 FIRE Research Lab. All rights reserved.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
