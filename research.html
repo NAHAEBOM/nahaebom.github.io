@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research | FIRE Research Lab</title>
-  <meta name="description" content="자동매매, 시장 강도, 환율 RSI, ETF 전략 등 데이터 기반 금융 연구를 정리하는 페이지">
+  <meta name="description" content="시장 분석, 자동매매 연구, 거시경제 및 환율 분석, 백테스트 기록을 정리하는 연구 허브 페이지입니다.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
   <header class="site-header">
     <div class="container">
       <h1 class="site-title">FIRE Research Lab</h1>
-      <p class="site-subtitle">Research Archive</p>
+      <p class="site-subtitle">Research & Analysis</p>
 
       <nav class="site-nav">
         <a href="index.html">Home</a>
@@ -25,115 +25,298 @@
     </div>
   </header>
 
-  <main class="container">
+  <main>
+    <!-- Hero -->
+    <section class="page-hero research-hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <p class="section-eyebrow">Research Hub</p>
+            <h2 class="page-title">시장과 시스템을 데이터로 연구하는 공간</h2>
+            <p class="page-description">
+              이 페이지는 시장 분석, 자동매매 전략 검토, 거시경제 및 환율 데이터 해석,
+              백테스트 기록, 운영 인사이트를 체계적으로 정리하는 연구 허브입니다.
+            </p>
 
-    <section class="card">
-      <h2>Research Overview</h2>
-      <p>
-        이 페이지는 자동매매, 시장 데이터 분석, 환율 지표 연구, ETF 장기 투자 구조 등
-        실제 자산 운용과 연결되는 금융 연구를 축적하는 공간입니다.
-      </p>
-      <p>
-        단순한 아이디어 메모가 아니라, 문제 정의 → 데이터 확인 → 가설 설정 → 조건 검증 →
-        결과 기록의 구조로 축적하는 것을 목표로 합니다.
-      </p>
+            <div class="hero-actions">
+              <a href="#research-areas" class="btn btn-primary">연구 영역 보기</a>
+              <a href="#archive" class="btn btn-secondary">아카이브 보기</a>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <h3>Research Focus</h3>
+            <ul class="hero-list">
+              <li>시장 구조와 수급 흐름 분석</li>
+              <li>자동매매 전략 설계와 검증</li>
+              <li>거시지표와 환율의 연결 해석</li>
+              <li>백테스트와 실전 운영 비교</li>
+              <li>리포트 및 인사이트 축적</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Core Research Areas</h2>
-      <ul>
-        <li><strong>자동매매 전략 연구</strong> — 분할매수, 리스크 제어, 다계좌 운용 구조 검토</li>
-        <li><strong>시장 강도 분석</strong> — 상승/하락 종목 수, 거래량, 거래대금 기반 시장 상태 측정</li>
-        <li><strong>환율 RSI 연구</strong> — USD/KRW, JPY/KRW의 이격도 및 RSI 활용 가능성 검토</li>
-        <li><strong>ETF 장기 투자 연구</strong> — 배당, 변동성, 장기 수익률 관점에서 구조 비교</li>
-        <li><strong>거시 데이터 활용</strong> — FRED 및 기타 거시지표와 시장의 연결성 탐색</li>
-      </ul>
+    <!-- Research Areas -->
+    <section id="research-areas" class="content-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">Research Areas</p>
+          <h2>핵심 연구 영역</h2>
+          <p>
+            연구는 단순한 의견이 아니라, 데이터 수집 → 해석 → 검증 → 기록의 흐름으로 축적됩니다.
+          </p>
+        </div>
+
+        <div class="card-grid three-col">
+          <article class="info-card">
+            <span class="card-tag">Market Analysis</span>
+            <h3>시장 분석</h3>
+            <p>
+              지수 흐름, 변동성, 거래대금, 수급, RSI 등 시장 상태를 다각도로 분석하여
+              현재 시장의 위치를 판단합니다.
+            </p>
+            <ul class="feature-list">
+              <li>KOSPI / VKOSPI 분석</li>
+              <li>거래량 / 거래대금 흐름</li>
+              <li>과열 / 침체 구간 판별</li>
+              <li>단기·중기 시황 판단</li>
+            </ul>
+          </article>
+
+          <article class="info-card">
+            <span class="card-tag">Trading Strategy</span>
+            <h3>자동매매 전략 연구</h3>
+            <p>
+              세븐스플릿을 포함한 분할매수 전략, 진입 기준, 청산 구조, 계좌 분산 운영 방식을
+              연구하고 실전성과를 점검합니다.
+            </p>
+            <ul class="feature-list">
+              <li>분할매수 로직 연구</li>
+              <li>계좌별 리스크 분산</li>
+              <li>매수/매도 조건 검토</li>
+              <li>전략 고도화 아이디어 기록</li>
+            </ul>
+          </article>
+
+          <article class="info-card">
+            <span class="card-tag">Macro & FX</span>
+            <h3>거시경제 / 환율 분석</h3>
+            <p>
+              환율, 금리, 연준 지표, 유동성 지표 등을 통해 시장 방향성과 리스크 환경을 함께 해석합니다.
+            </p>
+            <ul class="feature-list">
+              <li>USD/KRW / JPY/KRW 분석</li>
+              <li>FRED 지표 추적</li>
+              <li>유동성과 위험선호 점검</li>
+              <li>시장과 거시의 연결 해석</li>
+            </ul>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Current Research Projects</h2>
+    <!-- Research Process -->
+    <section class="content-section alt-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">Research Process</p>
+          <h2>연구가 진행되는 방식</h2>
+          <p>
+            연구는 생각을 적는 것이 아니라, 데이터를 모으고 해석하고 검증하는 반복 과정으로 이루어집니다.
+          </p>
+        </div>
 
-      <article>
-        <h3>1. Seven Split 기반 자동매매 구조 연구</h3>
-        <p>
-          분할매수와 계좌 분산을 결합한 자동매매 전략을 연구합니다.
-          주문 구조, 상태 저장, 매도 규칙, 예외 처리, 재시작 안정성까지 포함한
-          실전 운영 구조를 점검합니다.
-        </p>
-        <p><strong>핵심 질문:</strong> 동일한 전략이 실제 운영 환경에서도 일관되게 작동하는가?</p>
-      </article>
-
-      <hr>
-
-      <article>
-        <h3>2. 시장 강도 지표 자동화 연구</h3>
-        <p>
-          KRX 데이터를 기반으로 시장 전반의 강도를 측정하는 지표를 만들고,
-          이를 그래프와 리포트 형태로 자동 전송하는 구조를 연구합니다.
-        </p>
-        <p><strong>핵심 질문:</strong> 단순 지수보다 시장 내부 상태를 더 잘 보여주는가?</p>
-      </article>
-
-      <hr>
-
-      <article>
-        <h3>3. 환율 RSI 및 이격도 기반 판단 연구</h3>
-        <p>
-          USD/KRW 및 JPY/KRW 환율 데이터를 활용하여 RSI, 이동평균, 이격도 등의 지표가
-          실제 판단 보조 도구로 유의미한지 검토합니다.
-        </p>
-        <p><strong>핵심 질문:</strong> 환율 데이터만으로도 과열/침체 신호를 일정 수준 포착할 수 있는가?</p>
-      </article>
-
-      <hr>
-
-      <article>
-        <h3>4. ETF 장기 보유 포트폴리오 연구</h3>
-        <p>
-          장기 현금흐름과 자산 성장의 균형을 고려하여 ETF 조합 구조를 연구합니다.
-          배당 중심, 성장 중심, 방어 자산 혼합 구조를 비교합니다.
-        </p>
-        <p><strong>핵심 질문:</strong> 장기적으로 유지 가능한 구조는 무엇인가?</p>
-      </article>
+        <div class="architecture-flow">
+          <div class="flow-box">
+            <h3>1. Data Collection</h3>
+            <p>시장 데이터, 거시지표, 환율, 변동성 데이터 수집</p>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-box">
+            <h3>2. Indicator Build</h3>
+            <p>RSI, 이격도, 이동평균, 거래량/거래대금 분석 지표 계산</p>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-box">
+            <h3>3. Interpretation</h3>
+            <p>현재 시장 국면과 전략 유효성 해석</p>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-box">
+            <h3>4. Validation</h3>
+            <p>백테스트, 실전 로그, 결과 비교 검토</p>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-box">
+            <h3>5. Archive</h3>
+            <p>리포트, 노트, 시스템 개선안으로 축적</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Research Method</h2>
-      <ol>
-        <li>문제 정의</li>
-        <li>가설 설정</li>
-        <li>데이터 수집</li>
-        <li>지표 계산 및 시각화</li>
-        <li>조건별 비교</li>
-        <li>한계점 기록</li>
-        <li>다음 실험 과제 정리</li>
-      </ol>
+    <!-- Research Modules -->
+    <section class="content-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">Research Modules</p>
+          <h2>세부 연구 모듈</h2>
+          <p>
+            분석 주제는 독립된 모듈로 관리되어, 나중에 리포트나 강의, 전자책으로도 확장될 수 있습니다.
+          </p>
+        </div>
+
+        <div class="module-grid">
+          <article class="module-card">
+            <h3>Market Strength Studies</h3>
+            <p class="module-summary">
+              상승/하락 종목 수, 시장 폭, 거래대금 흐름을 기반으로 시장 강도를 연구합니다.
+            </p>
+            <ul class="feature-list">
+              <li>시장 강도 지표 연구</li>
+              <li>추세와 반등 구간 구분</li>
+              <li>일일 시황 해석</li>
+              <li>리포트 자동화 연계</li>
+            </ul>
+          </article>
+
+          <article class="module-card">
+            <h3>Volatility Studies</h3>
+            <p class="module-summary">
+              VKOSPI 및 시장 변동성 지표를 통해 공포/안정 구간을 분석합니다.
+            </p>
+            <ul class="feature-list">
+              <li>변동성 국면 판별</li>
+              <li>반전 가능성 점검</li>
+              <li>리스크 관리 관점 분석</li>
+              <li>시장 타이밍 보조</li>
+            </ul>
+          </article>
+
+          <article class="module-card">
+            <h3>FX Studies</h3>
+            <p class="module-summary">
+              원달러, 엔원 환율 흐름과 RSI·이격도를 통해 매매 및 위험 환경을 연구합니다.
+            </p>
+            <ul class="feature-list">
+              <li>환율 방향성 분석</li>
+              <li>RSI 기반 해석</li>
+              <li>추세 지속/과열 판단</li>
+              <li>시장과의 상관관계 연구</li>
+            </ul>
+          </article>
+
+          <article class="module-card">
+            <h3>Backtesting Lab</h3>
+            <p class="module-summary">
+              전략 아이디어를 과거 데이터에 적용하여 논리와 수익구조를 검증합니다.
+            </p>
+            <ul class="feature-list">
+              <li>조건별 성과 비교</li>
+              <li>리스크/수익률 검토</li>
+              <li>시기별 성능 차이 확인</li>
+              <li>실전 적용 전 검증</li>
+            </ul>
+          </article>
+
+          <article class="module-card">
+            <h3>Execution Review</h3>
+            <p class="module-summary">
+              실전 운영 과정에서 발생한 주문 흐름, 예외 처리, 병목, 개선 포인트를 검토합니다.
+            </p>
+            <ul class="feature-list">
+              <li>실전 로그 리뷰</li>
+              <li>예외 상황 분석</li>
+              <li>운영 안정성 점검</li>
+              <li>속도 개선 기록</li>
+            </ul>
+          </article>
+
+          <article class="module-card">
+            <h3>Research Notes</h3>
+            <p class="module-summary">
+              단기 아이디어, 관찰 메모, 향후 실험 주제를 정리하는 축적 공간입니다.
+            </p>
+            <ul class="feature-list">
+              <li>실험 아이디어 축적</li>
+              <li>시장 메모 기록</li>
+              <li>향후 글/강의 소재 정리</li>
+              <li>연구 아카이브 기반 구축</li>
+            </ul>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Research Principles</h2>
-      <ul>
-        <li>추정과 사실을 구분한다.</li>
-        <li>조건과 숫자를 가능한 한 명확히 기록한다.</li>
-        <li>잘된 결과보다 실패한 결과도 함께 남긴다.</li>
-        <li>실제 운영과 연결되는 연구를 우선한다.</li>
-        <li>장기적으로 축적 가능한 구조를 유지한다.</li>
-      </ul>
+    <!-- Archive -->
+    <section id="archive" class="content-section alt-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-eyebrow">Archive</p>
+          <h2>최근 연구 아카이브</h2>
+          <p>
+            아래 항목들은 향후 실제 글, PDF 리포트, 차트 문서, 전략 검토 기록으로 연결될 수 있는 자리입니다.
+          </p>
+        </div>
+
+        <div class="archive-list">
+          <article class="archive-item">
+            <div class="archive-date">2026-03</div>
+            <div class="archive-content">
+              <h3>시장 강도와 변동성 기반 단기 시황 해석</h3>
+              <p>
+                KOSPI, 거래량, 거래대금, VKOSPI를 함께 해석하여 단기 시장 위치를 점검한 연구 기록.
+              </p>
+            </div>
+          </article>
+
+          <article class="archive-item">
+            <div class="archive-date">2026-03</div>
+            <div class="archive-content">
+              <h3>세븐스플릿 전략의 실전 운영 안정성 검토</h3>
+              <p>
+                다계좌 구조, 상태 동기화, pending 관리, 속도 개선 포인트를 점검한 운영 메모.
+              </p>
+            </div>
+          </article>
+
+          <article class="archive-item">
+            <div class="archive-date">2026-03</div>
+            <div class="archive-content">
+              <h3>환율 RSI 및 이격도 기반 분석 노트</h3>
+              <p>
+                USD/KRW와 JPY/KRW 흐름을 기술적 관점에서 해석하고 자동화 가능성을 검토한 노트.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>Next Expansion</h2>
-      <p>향후 이 페이지는 아래 형태로 확장할 예정입니다.</p>
-      <ul>
-        <li>개별 연구 글 상세 페이지 추가</li>
-        <li>카테고리 및 태그 분류</li>
-        <li>백테스트 결과 페이지 연결</li>
-        <li>그래프 이미지 및 표 삽입</li>
-        <li>월간 연구 업데이트 아카이브 구축</li>
-      </ul>
+    <!-- CTA -->
+    <section class="content-section cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Research is the bridge between data and action.</h2>
+          <p>
+            연구는 단순한 의견이 아니라, 실제 시스템 운영과 전략 실행으로 연결되기 위한 기반입니다.
+          </p>
+          <div class="hero-actions">
+            <a href="systems.html" class="btn btn-primary">Systems 보기</a>
+            <a href="journal.html" class="btn btn-secondary">Journal 보기</a>
+          </div>
+        </div>
+      </div>
     </section>
-
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 FIRE Research Lab. All rights reserved.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
