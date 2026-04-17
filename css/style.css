@@ -607,3 +607,10 @@ ul {
   object-fit: cover;
   display: block;
 }
+
+
+.post-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
