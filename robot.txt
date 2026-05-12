@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nahaebom.github.io/sitemap.xml
